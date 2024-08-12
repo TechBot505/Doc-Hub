@@ -96,7 +96,7 @@ const Login: React.FC = () => {
               onSubmit={loginUser}
               className="w-full py-2.5 px-4 text-sm font-semibold tracking-wider rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
             >
-              Sign in
+              Login
             </button>
             <p className="text-sm text-center mt-6">
               Don't have an account{" "}
