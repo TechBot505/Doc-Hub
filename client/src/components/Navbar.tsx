@@ -5,9 +5,17 @@ import {
   faBars,
   faCross,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
+
+  const navigate = useNavigate();
+
+  const logoutUser = () => {
+    localStorage.removeItem('token');
+    navigate('/');
+  }
+
   return (
     <header className="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
       <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
@@ -85,7 +93,7 @@ function Navbar() {
           </div>
 
           <div className="flex items-center space-x-8">
-            <button className="px-5 py-2 text-sm rounded-full text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]">
+            <button onClick={logoutUser} className="px-5 py-2 text-sm rounded-full text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]">
               Log Out
             </button>
 
