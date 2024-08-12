@@ -4,10 +4,11 @@ import PrivateVault from "./pages/PrivateVault";
 import PublicVault from "./pages/PublicVault";
 import SignUp from "./pages/SignUp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { PdfContextProvider } from "./context/PdfContext";
 
 function App() {
   return (
-    <div>
+    <PdfContextProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -17,7 +18,7 @@ function App() {
           <Route path="/public" element={<PublicVault />} />
         </Routes>
       </Router>
-    </div>
+    </PdfContextProvider>
   );
 }
 

@@ -77,9 +77,9 @@ function Footer() {
                   gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stop-color="#fd5" />
-                  <stop offset=".5" stop-color="#ff543e" />
-                  <stop offset="1" stop-color="#c837ab" />
+                  <stop offset="0" stopColor="#fd5" />
+                  <stop offset=".5" stopColor="#ff543e" />
+                  <stop offset="1" stopColor="#c837ab" />
                 </linearGradient>
                 <path
                   fill="url(#a)"
@@ -112,13 +112,6 @@ function Footer() {
               className="text-gray-300 hover:text-white text-base"
             >
               Privacy Policy
-            </span>
-          </li>
-          <li>
-            <span
-              className="text-gray-300 hover:text-white text-base"
-            >
-              Contact
             </span>
           </li>
         </ul>

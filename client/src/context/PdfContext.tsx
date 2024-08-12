@@ -12,7 +12,10 @@ export interface PdfContextInterface {
   setAllPdfs: Dispatch<SetStateAction<Pdf[]>>;
 }
 
-const PdfContext = createContext<Partial<PdfContextInterface>>({});
+const PdfContext = createContext<PdfContextInterface>({
+  allPdfs: [],
+  setAllPdfs: () => []
+});
 
 export const usePdfContext = () => {
   return useContext(PdfContext);
