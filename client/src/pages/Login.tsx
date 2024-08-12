@@ -26,10 +26,10 @@ const Login: React.FC = () => {
 
     if (data.user) {
       localStorage.setItem("token", data.user);
-      alert("Login successful");
+      console.log("Login successful");
       navigate("/home");
     } else {
-      alert("Please check your username and password");
+      console.log("Please check your username and password");
     }
   };
 

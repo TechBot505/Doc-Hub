@@ -51,15 +51,18 @@ const Home: React.FC = () => {
       });
 
       if (result.data.status === "ok") {
-        alert("Uploaded Successfully!!!");
+        console.log("Uploaded Successfully!!!");
         setTitle("");
+        setPdfArrayBuffer(null);
+        setPrivateFile(false);
+        setFile(undefined);
         getAllPdf();
       } else {
-        alert("File upload failed.");
+        console.log("File upload failed.");
       }
     } catch (error) {
       console.error("Error uploading the file:", error);
-      alert("An error occurred while uploading the file.");
+      console.log("An error occurred while uploading the file.");
     }
   }
 
@@ -112,6 +115,7 @@ const Home: React.FC = () => {
                 name="title"
                 type="text"
                 onChange={(e) => setTitle(e.target.value)}
+                value={title}
                 required
                 className="w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
                 placeholder="Enter Title"
@@ -145,6 +149,7 @@ const Home: React.FC = () => {
                   id="private"
                   name="private"
                   type="checkbox"
+                  value={privateFile.toString()}
                   onChange={(e) => setPrivateFile(e.target.checked)}
                   className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
@@ -166,9 +171,9 @@ const Home: React.FC = () => {
             <hr className="my-4 border-gray-300" />
           </form>
         </div>
-        <div className="w-1/2 grid">
+        {pdfArrayBuffer && <div className="w-1/2 grid">
           {pdfArrayBuffer && <PdfViewer pdfArrayBuffer={pdfArrayBuffer} />}
-        </div>
+        </div>}
       </div>
       <Footer />
     </>

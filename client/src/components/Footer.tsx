@@ -8,7 +8,7 @@ function Footer() {
         <ul className="flex flex-wrap justify-center gap-x-6 gap-4">
           <li>
             <Link 
-              to="/"
+              to="/home"
               className="text-xl hover:text-gray-400"
             >
               <svg
@@ -32,7 +32,7 @@ function Footer() {
 
           <li>
             <Link
-              to="/"
+              to="/home"
               className="text-xl hover:text-gray-400"
             >
               <svg
@@ -60,7 +60,7 @@ function Footer() {
 
           <li>
             <Link
-              to="/"
+              to="/home"
               className="text-xl hover:text-gray-400"
             >
               <svg

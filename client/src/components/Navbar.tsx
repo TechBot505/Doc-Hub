@@ -4,7 +4,7 @@ import {
   faBars,
   faCross,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Navbar() {
