@@ -6,8 +6,8 @@ The platform also offers a seamless document preview, download, and search funct
 
 ## Key Features
 1. **User Authentication:**
-  * Users can create accounts and securely log in to the platform.
-  * Authentication is implemented using JWT tokens, ensuring secure and validated user sessions.
+   * Users can create accounts and securely log in to the platform.
+   * Authentication is implemented using JWT tokens, ensuring secure and validated user sessions.
 
 ![Screenshot (542)](https://github.com/user-attachments/assets/30d56e5f-ba53-470e-a51f-70d025b490ed)
 
@@ -15,28 +15,28 @@ The platform also offers a seamless document preview, download, and search funct
 
 
 2. **Document Upload:**
-  * Users can upload documents either publicly or privately.
-  * Users can select if they want to keep the document private or public using the checkbox in uploading form.
+   * Users can upload documents either publicly or privately.
+   * Users can select if they want to keep the document private or public using the checkbox in uploading form.
 
 ![Screenshot (537)](https://github.com/user-attachments/assets/e99aa9ce-f3da-4b9f-909f-88caee02f6a6)
 
 
 3. **Document Privacy:**
-  * Public documents are stored in the public vault, accessible to all users.
-  * Private documents are stored in the user's private vault, visible only to them.
+   * Public documents are stored in the public vault, accessible to all users.
+   * Private documents are stored in the user's private vault, visible only to them.
 
 ![Screenshot (539)](https://github.com/user-attachments/assets/8e28644d-33a0-440a-9c14-ec84f7d46af9)
 
 4. **Document Preview and Download:**
-  * Before uploading, users can preview their documents to verify content.
-  * Users can also download their documents during the preview process.
+   * Before uploading, users can preview their documents to verify content.
+   * Users can also download their documents during the preview process.
 
 ![Screenshot (538)](https://github.com/user-attachments/assets/ce9b3090-75e7-4d51-b5bf-f07c9d1f03b9)
 
   
 5. **Document Search:**
-  * In the public vault, users can search for documents by the username of the uploader.
-  * In the private vault, users can search for their own documents by title.
+   * In the public vault, users can search for documents by the username of the uploader.
+   * In the private vault, users can search for their own documents by title.
 
 ![Screenshot (540)](https://github.com/user-attachments/assets/42516c2f-d5b8-4fc9-909d-9a05d410e704)
 
@@ -45,10 +45,10 @@ The platform also offers a seamless document preview, download, and search funct
    * The document is sent to backend and stored locally using blob.
   
 7. **PDF Viewer:**
-  * Users can open and view their PDF documents directly within the platform.
+   * Users can open and view their PDF documents directly within the platform.
   
 8. **High Performance:**
-  * The platform is optimized to handle large amounts of data, providing a smooth and responsive user experience.
+   * The platform is optimized to handle large amounts of data, providing a smooth and responsive user experience.
 
 ## Tech Stacks
 
