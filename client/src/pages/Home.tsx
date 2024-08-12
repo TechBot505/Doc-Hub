@@ -97,7 +97,7 @@ const Home: React.FC = () => {
         <div className="grid justify-center max-w-md mx-auto">
           <div>
             <img
-              src="https://readymadeui.com/login-image.webp"
+              src="https://readymadeui.com/management-img.webp"
               className="w-full object-cover rounded-2xl"
               alt="login-image"
             />
